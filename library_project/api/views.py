@@ -12,3 +12,12 @@ def BookAPIView(request):
     book=Book.objects.all()
     serializer= ItemSerializers(book,many=True)
     return Response(serializer.data)
+
+
+@api_view(['POST'])
+def AddBookItem(request):
+    serializer=ItemSerializers(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+
+    return Response(serializer.data)

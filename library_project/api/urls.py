@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns=[
     path('',views.BookAPIView),
+    path('add/',views.AddBookItem),
     ]
