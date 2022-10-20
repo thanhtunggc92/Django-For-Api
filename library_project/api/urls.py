@@ -5,3 +5,4 @@ urlpatterns=[
     path('',views.BookAPIView),
     path('add/',views.AddBookItem),
     ]
+        
