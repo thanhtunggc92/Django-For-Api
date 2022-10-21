@@ -1,5 +1,4 @@
-from operator import imod
-from statistics import mode
+
 from rest_framework import serializers
 from books.models import Book
 
